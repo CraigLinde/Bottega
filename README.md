@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# this is a h1 heading
+### this is a h3 heading
+> this is a statement
+- list item1
+- list item2
+
+```ruby
+def mymethod
+  puts "hello"
+end
+```
