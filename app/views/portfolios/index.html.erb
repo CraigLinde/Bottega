@@ -1,0 +1,9 @@
+<h1 id = "myheading">Welcome to the Portfolio Page</h1>
+
+<%@portfolio_items.each do |p_item|%>
+  <p><%= p_item.title %></p>
+  <p><%= p_item.subtitle %></p>
+  <p><%= p_item.body %></p>
+  <p id = "thumb"><%= image_tag p_item.thumb_image %></p>
+
+  <%end%>
