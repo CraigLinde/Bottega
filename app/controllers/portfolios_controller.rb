@@ -19,7 +19,7 @@ end
 
 def create
     @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
-=======
+
     @portfolio_item = Portfolio.new
   end
 
@@ -74,7 +74,7 @@ def update
 
 
 end
-=======
+
   def update
     @portfolio_item = Portfolio.find(params[:id])
     
