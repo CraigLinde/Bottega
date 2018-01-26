@@ -51,6 +51,15 @@ class BlogsController < ApplicationController
     end
   end
 
+  def toggle_status
+    if @blog.draft?
+      @blog.published! 
+    elsif @blog.published?
+    @blog.draft!
+    end
+    redirect_to blogs_url, notice: 'Post Status was Updated.' 
+  end
+
   # DELETE /blogs/1
   # DELETE /blogs/1.json
   def destroy
@@ -66,17 +75,6 @@ class BlogsController < ApplicationController
     def set_blog
       @blog = Blog.friendly.find(params[:id])
     end
-
-
-def toggle_status
-  if @blog.draft?
-    @blog.published! 
-  elsif @blog.published?
-  @blog.draft!
-  end
-  redirect_to blogs_url, notice: 'Post Status was Updated.' 
-end
-
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
