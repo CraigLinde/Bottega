@@ -21,5 +21,10 @@
     <%end%>
     
     <%= yield %>
+
+<%if session[:source]%>
+Thanks for visiting us from <%= session[:source] %>
+<%end%>
+
   </body>
 </html>
