@@ -9,19 +9,19 @@
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<%= render 'shared/nav', location: 'top' %>
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
   <%= login_helper %>
- <%= source_helper("portfolio")%>
+  <%= source_helper("portfolio")%>
 
     <%= yield %>
 
      
 
- <%= render 'shared/nav', location: 'top' %>
+ 
 
 <%if session[:source]%>
 Thanks for visiting us from <%= session[:source] %>

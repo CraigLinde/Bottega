@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<%= render 'shared/nav', location: 'bottom' %>
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -19,7 +19,7 @@
 
     <%= yield %>
 
-  <%= render 'shared/nav', location: 'bottom' %>
+  
 
 <%if session[:source]%>
 Thanks for visiting us from <%= session[:source] %>
