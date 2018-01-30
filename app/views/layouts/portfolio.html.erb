@@ -6,23 +6,26 @@
 
     <META name=<%= @seo_keywords%>/>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<%= render 'shared/nav', location: 'top' %>
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-  
-    #<%= render 'shared/nav', location: 'top' %>
+  <%= login_helper %>
+  <%= source_helper("portfolio")%>
 
-    <%=login_helper%>
-    <%=source_helper("application")%>
-    
     <%= yield %>
 
+     
 
+ 
+
+<%if session[:source]%>
+Thanks for visiting us from <%= session[:source] %>
+<%end%>
 
   </body>
 </html>

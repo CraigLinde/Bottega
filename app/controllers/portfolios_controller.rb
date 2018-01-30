@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  layout "portfolio"
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -30,7 +32,6 @@ class PortfoliosController < ApplicationController
 
   def update
     @portfolio_item = Portfolio.find(params[:id])
-
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'The record successfully updated.' }
