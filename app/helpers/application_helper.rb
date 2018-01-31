@@ -20,6 +20,9 @@ module ApplicationHelper
 
   end
 
+def copyright_generator
+  LindedataViewTool::Renderrer.copyright 'LindeData', 'All rights reserved'
+end
 
 
 

@@ -20,10 +20,11 @@
     <%= yield %>
 
   
-
 <%if session[:source]%>
 Thanks for visiting us from <%= session[:source] %>
 <%end%>
 
+
+<%=copyright_generator%>
   </body>
 </html>
