@@ -55,3 +55,9 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.3'
 
 gem 'devise', '~> 4.4', '>= 4.4.1'
 
+gem 'bootstrap', '~> 4.0.0'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+gem 'lindedata_view_tool', '~> 0.1.0'
+
