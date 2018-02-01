@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title><%=@page_title%> </title>
     <%= csrf_meta_tags %>
@@ -15,7 +15,7 @@
     <p class="alert"><%= alert %></p>
 
   
-    #<%= render 'shared/nav', location: 'top' %>
+    <%= render 'shared/nav', location: 'top' %>
 
     <%=login_helper%>
     <%=source_helper("application")%>
