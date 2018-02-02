@@ -1,7 +1,7 @@
 class BlogsController < ApplicationController
-before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
-layout "blog"
-access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+  layout "blog"
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
@@ -59,7 +59,7 @@ access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :
     if @blog.draft?
       @blog.published! 
     elsif @blog.published?
-    @blog.draft!
+      @blog.draft!
     end
     redirect_to blogs_url, notice: 'Post Status was Updated.' 
   end
@@ -84,4 +84,4 @@ access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :
     def blog_params
       params.require(:blog).permit(:title, :body)
     end
-end
+  end
