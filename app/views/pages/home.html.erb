@@ -1,18 +1,7 @@
-<h1>Hi, <%= current_user.first_name if current_user %></h1>
-<div>Find me in</div>
-
-
-
-
-<h2 id = 'blogs'>Blogs</h2>
-<div>
-  <%= @posts.inspect %>
-  
+<div class="inner cover">
+  <h1 class="cover-heading">Welcome.</h1>
+  <p class="lead">Software development should not be a secret process, when I take on a new project I make it my goal to not only deliver a well crafted product but to also ensure that each stage of the process is fully communicated.</p>
+  <p class="lead">
+    <%= link_to "About Me", about_me_path, class: "btn btn-lg btn-secondary" %>
+  </p>
 </div>
-
-<h2 id = 'skills'>Skills</h2>
-<div>
-  <%= @skills.inspect %>
-  
-</div>
-
