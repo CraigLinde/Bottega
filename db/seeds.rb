@@ -40,8 +40,8 @@ end
   title: "Portfolio #{item}",
   subtitle: "Angular",
   body: "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ",
-  main_image: "http://via.placeholder.com/350x150.",
-  thumb_image: "http://via.placeholder.com/140x100."
+  main_image: "http://via.placeholder.com/650x150.",
+  thumb_image: "http://via.placeholder.com/200x75."
   )
 end
 p "9 portfolio created"
