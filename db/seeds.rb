@@ -30,8 +30,8 @@ p "5 skills created"
   title: "Portfolio #{item}",
   subtitle: "Ruby on Rails",
   body: "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum ",
-  main_image: "http://via.placeholder.com/350x150.",
-  thumb_image: "http://via.placeholder.com/140x100."
+  main_image: "http://via.placeholder.com/650x150.",
+  thumb_image: "http://via.placeholder.com/350x200."
   )
 end
 
@@ -40,8 +40,8 @@ end
   title: "Portfolio #{item}",
   subtitle: "Angular",
   body: "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ",
-  main_image: "http://via.placeholder.com/350x150.",
-  thumb_image: "http://via.placeholder.com/140x100."
+  main_image: "http://via.placeholder.com/650x150.",
+  thumb_image: "http://via.placeholder.com/350x200."
   )
 end
 p "9 portfolio created"
