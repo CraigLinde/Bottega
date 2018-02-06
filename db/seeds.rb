@@ -58,7 +58,3 @@ p "3 technologies created"
 
 
 
-
-
-
-
