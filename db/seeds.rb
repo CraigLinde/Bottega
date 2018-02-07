@@ -54,11 +54,8 @@ end
 
 p "3 technologies created"
 
+User.create(name: 'Craig Linde', email:"craig.linde@gmail.com", password:"Password", password_confirmation:"Password", role:"site_admin")
 
-
-
-
-
-
+User.create(name: 'Bob Marley', email:"Bob@gmail.com", password:"Password", password_confirmation:"Password", role:"user")
 
 
