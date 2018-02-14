@@ -15,6 +15,7 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  padding:10Px;
 }
 
 h1, .h1,
@@ -78,6 +79,10 @@ h6, .h6 {
   border-right: .3rem solid transparent;
   border-bottom: .3rem solid;
   border-left: .3rem solid transparent;
+}
+
+.pull-right{
+  margin-left: auto;
 }
 
 
@@ -190,3 +195,8 @@ h6, .h6 {
 .comment-name {
   font-weight: 700;
 }
+
+.blogcrumb a {
+ font-size: 1.25em;
+ margin: 0px 10px 0px 10px;
+ } 
