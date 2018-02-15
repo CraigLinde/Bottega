@@ -34,6 +34,21 @@ h6, .h6 {
  * Override Bootstrap's default container.
  */
 
+
+.lobster{
+  font-family: 'Lobster', cursive;
+}
+
+.garamond{
+  font-family: 'EB Garamond', serif;
+}
+
+.playfair{
+  font-family: 'Playfair Display', serif;
+}
+
+
+
 .container {
   max-width: 60rem;
 }
