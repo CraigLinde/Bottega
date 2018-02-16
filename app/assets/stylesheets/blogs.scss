@@ -34,6 +34,21 @@ h6, .h6 {
  * Override Bootstrap's default container.
  */
 
+
+.lobster{
+  font-family: 'Lobster', cursive;
+}
+
+.garamond{
+  font-family: 'EB Garamond', serif;
+}
+
+.playfair{
+  font-family: 'Playfair Display', serif;
+}
+
+
+
 .container {
   max-width: 60rem;
 }
@@ -200,3 +215,12 @@ h6, .h6 {
  font-size: 1.25em;
  margin: 0px 10px 0px 10px;
  } 
+
+ .blog-nav {
+  margin-bottom: 30px;
+  background-color: #d1cdcc;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}

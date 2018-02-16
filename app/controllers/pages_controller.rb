@@ -13,4 +13,10 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def about
+    @skills = Skill.all
+  end
+
+
 end

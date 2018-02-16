@@ -28,6 +28,23 @@ a:hover {
  * Base structure
  */
 
+.lobster{
+  font-family: 'Lobster', cursive;
+}
+
+.garamond{
+  font-family: 'EB Garamond', serif;
+}
+
+.playfair{
+  font-family: 'Playfair Display', serif;
+}
+
+
+.aboutmebutton{
+  margin-top: 40Px;
+}
+
 html,
 body {
   height: 100%;
@@ -171,6 +188,8 @@ body {
 .card-block {
   color: black;
   text-align: left;
+  margin-top: 5Px;
+  margin-bottom: 5Px;
 }
 
 .auth-links a {
@@ -203,7 +222,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('ChinaCove.jpg') no-repeat;
+  background: image-url('Hello-World.jpg') no-repeat;
   background-size: cover;
 
 }
@@ -225,3 +244,12 @@ body {
 .tech-news > .card{
   padding:15Px;
 }
+
+.edulist {
+  font-size: .8em;
+}
+
+.login-card{
+  padding: 10Px;
+}
+

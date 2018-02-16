@@ -9,10 +9,10 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
 
@@ -44,7 +44,7 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Tech News'
+        title: 'Tech Tweets'
       },
     ]
   end
@@ -63,29 +63,16 @@ module ApplicationHelper
     "active" if current_page? path
   end
 
-
-
   def alerts
-      alert = (flash[:alert] || flash[:error] || flash[:notice])
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
 
-      if alert
-        alert_generator alert
-      end
+    if alert
+      alert_generator alert
+    end
   end
 
-
   def alert_generator msg
-    js add_gritter(msg, title: "Craig Linde's Portfolio", sticky: false)
+    js add_gritter(msg, title: "Craig Linde's Portfolio", sticky: false, :time => 1500)
   end
 
 end
-
-
-
-
-
-
-
-
-
-
