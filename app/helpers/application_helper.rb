@@ -44,7 +44,7 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Tech News'
+        title: 'Tech Tweets'
       },
     ]
   end
@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Craig Linde's Portfolio", sticky: false)
+    js add_gritter(msg, title: "Craig Linde's Portfolio", sticky: false, :time => 1500)
   end
 
 end
